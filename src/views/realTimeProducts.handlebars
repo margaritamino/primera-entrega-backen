@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos en Tiempo Real</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    // Escuchar el evento 'newProduct' para agregar un producto
+    socket.on('newProduct', function(product) {
+      const ul = document.getElementById('product-list');
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <strong>${product.title}</strong> - $${product.price} <br>
+        Descripción: ${product.description} <br>
+        Código: ${product.code} <br>
+        Categoría: ${product.category} <br>
+        <form action="/deleteProduct" method="POST" style="display:inline;">
+          <input type="hidden" name="id" value="${product.id}">
+          <button type="submit">Eliminar</button>
+        </form>
+      `;
+      ul.appendChild(li);
+    });
+
+    // Escuchar el evento 'deleteProduct' para eliminar un producto
+    socket.on('deleteProduct', function(productId) {
+      const productList = document.getElementById('product-list');
+      const productItems = productList.getElementsByTagName('li');
+      for (let item of productItems) {
+        if (item.querySelector('input[name="id"]').value === productId) {
+          productList.removeChild(item);
+        }
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1>Productos en Tiempo Real</h1>
+  <ul id="product-list">
+    {{#each productos}}
+      <li>
+        <strong>{{this.title}}</strong> - ${{this.price}} <br>
+        Descripción: {{this.description}} <br>
+        Código: {{this.code}} <br>
+        Categoría: {{this.category}} <br>
+        <form action="/deleteProduct" method="POST" style="display:inline;">
+          <input type="hidden" name="id" value="{{this.id}}">
+          <button type="submit">Eliminar</button>
+        </form>
+      </li>
+    {{/each}}
+  </ul>
+</body>
+</html>
+

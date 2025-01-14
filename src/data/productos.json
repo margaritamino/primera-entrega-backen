@@ -1,31 +1,5 @@
 [
   {
-    "id": "1681981240500",
-    "title": "Smartphone XYZ",
-    "description": "Smartphone con pantalla AMOLED de 6.5 pulgadas, 128GB de almacenamiento y cámara de 48MP.",
-    "code": "SP12345",
-    "price": 299.99,
-    "status": true,
-    "stock": 50,
-    "category": "Electrónica",
-    "thumbnails": [
-      "https://example.com/images/smartphone1.jpg"
-    ]
-  },
-  {
-    "id": "1681981240600",
-    "title": "Laptop ABC Pro",
-    "description": "Laptop con procesador i7, 16GB de RAM, 512GB SSD y pantalla 15.6 pulgadas.",
-    "code": "LP98765",
-    "price": 899.99,
-    "status": true,
-    "stock": 30,
-    "category": "Computadoras",
-    "thumbnails": [
-      "https://example.com/images/laptop1.jpg"
-    ]
-  },
-  {
     "id": "1681981240700",
     "title": "Cámara Digital 4K",
     "description": "Cámara compacta con grabación en 4K, estabilización de imagen y lente de 24mm.",
@@ -39,70 +13,14 @@
     ]
   },
   {
-    "id": "1681981240800",
-    "title": "Auriculares Bluetooth",
-    "description": "Auriculares inalámbricos con cancelación de ruido y hasta 20 horas de autonomía.",
-    "code": "AU99876",
-    "price": 129.99,
+    "id": "1736887278751",
+    "title": "faiuhfpuaeh",
+    "description": "afrefnaiuhfae",
+    "code": "123",
+    "price": 500,
     "status": true,
-    "stock": 100,
-    "category": "Accesorios",
-    "thumbnails": [
-      "https://example.com/images/auriculares1.jpg"
-    ]
-  },
-  {
-    "id": "1681981240900",
-    "title": "Teclado Mecánico RGB",
-    "description": "Teclado mecánico con retroiluminación RGB, switches Cherry MX y teclas programables.",
-    "code": "TK65432",
-    "price": 79.99,
-    "status": true,
-    "stock": 75,
-    "category": "Accesorios",
-    "thumbnails": [
-      "https://example.com/images/teclado1.jpg"
-    ]
-  },
-  {
-    "id": "1681981241000",
-    "title": "Reloj Inteligente",
-    "description": "Reloj inteligente con monitoreo de actividad física, notificaciones y autonomía de 5 días.",
-    "code": "RL112233",
-    "price": 149.99,
-    "status": true,
-    "stock": 40,
-    "category": "Electrónica",
-    "thumbnails": [
-      "https://example.com/images/reloj1.jpg"
-    ]
-  },
-  {
-    "id": "1681981241100",
-    "title": "Monitor LED 24\"",
-    "description": "Monitor LED de 24 pulgadas, resolución Full HD y tasa de refresco de 75Hz.",
-    "code": "MO223344",
-    "price": 199.99,
-    "status": true,
-    "stock": 20,
-    "category": "Computadoras",
-    "thumbnails": [
-      "https://example.com/images/monitor1.jpg"
-    ]
-  },
-  {
-    "id": "1734390575704",
-    "status": true,
-    "thumbnails": []
-  },
-  {
-    "id": "1734390754230",
-    "status": true,
-    "thumbnails": []
-  },
-  {
-    "id": "1734390844635",
-    "status": true,
+    "stock": 2,
+    "category": "fotografia",
     "thumbnails": []
   }
 ]
